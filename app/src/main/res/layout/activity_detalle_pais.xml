@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallePaisActivity"
+    android:background="@drawable/bg_detalle">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:id="@+id/txtPais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Ecuador" />
+
+        <ImageView
+            android:id="@+id/imgBandera"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <FrameLayout
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:columnCount="2"
+            android:rowCount="9">
+
+            <TextView android:text="Capital:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtCapital" tools:text="Quito"/>
+
+            <TextView android:text="Code ISO 2:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtIso2" tools:text="EC"/>
+
+            <TextView android:text="Code ISO Num:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtIsoNum" tools:text="218"/>
+
+            <TextView android:text="Code ISO 3:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtIso3" tools:text="ECU"/>
+
+            <TextView android:text="Code FIPS:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtFips" tools:text="EC"/>
+
+            <TextView android:text="Tel Prefix:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtPrefix" tools:text="593"/>
+
+            <TextView android:text="Center°:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtCenter" tools:text="-2.00, -77.30"/>
+
+            <TextView android:text="Rectangle°:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtRectangle" tools:text="-91.66, 1.42, -75.18, -5.00" />
+
+            <TextView android:text="Country Info:" android:textStyle="bold" android:layout_marginEnd="8dp" android:layout_gravity="start"/>
+            <TextView android:id="@+id/txtInfo" android:linksClickable="true" android:autoLink="web" tools:text="http://..."/>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

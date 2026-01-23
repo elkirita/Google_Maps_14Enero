@@ -46,8 +46,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         mapa.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         mapa.getUiSettings().setZoomControlsEnabled(true);
-        
-        
+
         CameraUpdate camUpd1 =
             CameraUpdateFactory
                     .newLatLngZoom(new LatLng(-1.022294, -79.460454), 13);
